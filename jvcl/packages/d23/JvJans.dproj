@@ -1,14 +1,15 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{EB0CF9B5-CDAB-44C6-857C-0447D6CAC391}</ProjectGuid>
         <MainSource>JvJans.dpk</MainSource>
-        <ProjectVersion>17.3</ProjectVersion>
+        <ProjectVersion>18.1</ProjectVersion>
         <Config Condition="'$(Config)'==''">Release</Config>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <AppType>Package</AppType>
+        <TargetedPlatforms>1</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -69,10 +70,16 @@
         <DCCReference Include="..\..\run\JvMarkupCommon.pas"/>
         <DCCReference Include="..\..\run\JvMarkupLabel.pas"/>
         <DCCReference Include="..\..\run\JvMarkupViewer.pas"/>
-        <DCCReference Include="..\..\run\JvPainterEffectsForm.pas"/>
-        <DCCReference Include="..\..\run\JvPainterQBForm.pas"/>
+        <DCCReference Include="..\..\run\JvPainterEffectsForm.pas">
+            <Form>PainterEffectsF</Form>
+        </DCCReference>
+        <DCCReference Include="..\..\run\JvPainterQBForm.pas">
+            <Form>PainterQBF</Form>
+        </DCCReference>
         <DCCReference Include="..\..\run\JvPaintFX.pas"/>
-        <DCCReference Include="..\..\run\JvQuickPreviewForm.pas"/>
+        <DCCReference Include="..\..\run\JvQuickPreviewForm.pas">
+            <Form>QuickPreviewF</Form>
+        </DCCReference>
         <DCCReference Include="..\..\run\JvResample.pas"/>
         <DCCReference Include="..\..\run\JvSAL.pas"/>
         <DCCReference Include="..\..\run\JvSALCore.pas"/>
@@ -88,7 +95,9 @@
         <DCCReference Include="..\..\run\JvTurtle.pas"/>
         <DCCReference Include="..\..\run\JvXmlTree.pas"/>
         <DCCReference Include="..\..\run\JvYearGrid.pas"/>
-        <DCCReference Include="..\..\run\JvYearGridEditForm.pas"/>
+        <DCCReference Include="..\..\run\JvYearGridEditForm.pas">
+            <Form>YearGridEditF</Form>
+        </DCCReference>
         <DCCReference Include="..\..\run\JvAirBrush.pas"/>
         <DCCReference Include="..\..\run\JvArrayButton.pas"/>
         <DCCReference Include="..\..\run\JvBitmapButton.pas"/>
@@ -96,16 +105,18 @@
         <DCCReference Include="..\..\run\JvDrawImage.pas"/>
         <DCCReference Include="..\..\run\JvForth.pas"/>
         <DCCReference Include="..\..\run\JvGridFilter.pas"/>
-        <DCCReference Include="..\..\run\JvGridPreviewForm.pas"/>
+        <DCCReference Include="..\..\run\JvGridPreviewForm.pas">
+            <Form>jvGridPreviewF</Form>
+        </DCCReference>
         <DCCReference Include="..\..\run\JvGridPrinter.pas"/>
         <DCCReference Include="..\..\run\JvJanTreeView.pas"/>
         <DCCReference Include="..\..\run\JvSimIndicator.pas"/>
-        <BuildConfiguration Include="Base">
-            <Key>Base</Key>
-        </BuildConfiguration>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
         </BuildConfiguration>
         <BuildConfiguration Include="Release">
             <Key>Cfg_1</Key>
@@ -156,8 +167,7 @@
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Android">False</Platform>
-                <Platform value="iOSDevice">False</Platform>
-                <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">False</Platform>
+                <Platform value="iOSSimulator">False</Platform>
                 <Platform value="OSX32">False</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
@@ -167,3 +177,11 @@
     </ProjectExtensions>
     <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
 </Project>
+
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+DeleteMapAfterCompile=0
+Encrypt Password=""
+EurekaLog Last Line -->

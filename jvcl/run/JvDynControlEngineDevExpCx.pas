@@ -19,7 +19,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: jvcl/run/JvDynControlEngineDevExpCx.pas jfudickar date $
+// $Id: JvDynControlEngineDevExpCx.pas,v 1.5 2016-05-19 13:04:08 elias Exp $
 
 unit JvDynControlEngineDevExpCx;
 
@@ -1066,8 +1066,8 @@ function DynControlEngineDevExpCx: TJvDynControlEngineDevExpCx;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL: jvcl/run/JvDynControlEngineDevExpCx.pas $';
-    Revision: '$Revision: 3c2d95f4dca5add4bf68ec3879a79a241f867aee $';
-    Date: '$Date: 2013-08-11 21:01:11 +0200 $';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:08 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -17,7 +17,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvScheduleEditors.pas,v 1.5 2016-05-19 13:02:37 elias Exp $
 
 unit JvScheduleEditors;
 

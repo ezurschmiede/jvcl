@@ -25,7 +25,7 @@ Modifications:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvGammaPanel.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 unit JvGammaPanel;
 
@@ -89,8 +89,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

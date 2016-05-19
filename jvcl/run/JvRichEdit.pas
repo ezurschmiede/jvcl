@@ -29,7 +29,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvRichEdit.pas,v 1.5 2016-05-19 13:04:16 elias Exp $
 
 unit JvRichEdit;
 
@@ -974,8 +974,8 @@ function BitmapToRTF2(ABitmap: TBitmap; AStream: TStream): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:16 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

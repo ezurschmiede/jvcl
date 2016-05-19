@@ -31,7 +31,7 @@ description : JVCL Interpreter version 2
 Known Issues:
    String fields in records binded from Delphi don't work
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvInterpreter.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 { history (JVCL Library versions):
   1.10:
@@ -1298,8 +1298,8 @@ const
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

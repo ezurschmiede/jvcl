@@ -30,7 +30,7 @@ Description:
   screen.
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvLinkLabelRenderer.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 unit JvLinkLabelRenderer;
 
@@ -103,8 +103,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:10 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

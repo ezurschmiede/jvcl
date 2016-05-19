@@ -42,7 +42,7 @@ Changes 2003-03-23:
      - ImageOffset: change to ImageOptions.Offset // peter3
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvRollOut.pas,v 1.5 2016-05-19 13:04:16 elias Exp $
 
 unit JvRollOut;
 
@@ -336,8 +336,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:16 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

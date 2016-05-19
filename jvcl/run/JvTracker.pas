@@ -33,7 +33,7 @@ Change: (Lionel Reynaud, 2009-2011)
   - Add draw min, max values and introduce event property OnShowMinMaxValue
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvTracker.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
 
 unit JvTracker;
 
@@ -212,8 +212,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

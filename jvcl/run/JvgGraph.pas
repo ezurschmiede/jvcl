@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvgGraph.pas,v 1.5 2016-05-19 13:04:19 elias Exp $
 
 unit JvgGraph;
 
@@ -62,8 +62,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

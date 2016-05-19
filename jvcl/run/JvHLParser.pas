@@ -27,7 +27,7 @@ Known Issues:
   with [translated]
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvHLParser.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 {history:
 3.0:
@@ -158,8 +158,8 @@ procedure ParseStringW(const S: WideString; Ss: TWStrings);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -33,7 +33,7 @@ History:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvWizardRouteMapNodes.pas,v 1.6 2016-05-19 13:04:19 elias Exp $
 
 unit JvWizardRouteMapNodes;
 
@@ -110,8 +110,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

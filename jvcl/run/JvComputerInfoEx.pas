@@ -32,7 +32,7 @@ Known Issues:
   * ResetSystemIcons only tested on W2k
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvComputerInfoEx.pas,v 1.5 2016-05-19 13:04:05 elias Exp $
 
 unit JvComputerInfoEx;
 
@@ -1468,8 +1468,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:05 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

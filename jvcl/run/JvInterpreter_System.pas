@@ -23,7 +23,7 @@ Description : JVCL Interpreter version 2
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvInterpreter_System.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 unit JvInterpreter_System;
 
@@ -44,8 +44,8 @@ procedure RegisterJvInterpreterAdapter(JvInterpreterAdapter: TJvInterpreterAdapt
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:10 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

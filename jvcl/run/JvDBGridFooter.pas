@@ -32,7 +32,7 @@ HOW TO USE THIS COMPONENT:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDBGridFooter.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBGridFooter;
 
@@ -170,8 +170,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:06 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

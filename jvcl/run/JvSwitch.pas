@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvSwitch.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
 
 unit JvSwitch;
 
@@ -141,8 +141,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

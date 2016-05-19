@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvTabBarXPPainter.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
 
 unit JvTabBarXPPainter;
 

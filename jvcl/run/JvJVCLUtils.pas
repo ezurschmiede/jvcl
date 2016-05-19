@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvJVCLUtils.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 unit JvJVCLUtils;
 
@@ -872,8 +872,8 @@ function ReplaceComponentReference(This, NewReference: TComponent; var VarRefere
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:10 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

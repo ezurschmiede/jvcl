@@ -49,7 +49,7 @@ Scrolling rules:
       and scroll Rows pages on each click (i.e if Rows = 4 -> scroll 4 pages)
     * if scaling would make pages too small, show as many pages as possible
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvPrvwDoc.pas,v 1.5 2016-05-19 13:04:13 elias Exp $
 
 unit JvPrvwDoc;
 
@@ -464,8 +464,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:13 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

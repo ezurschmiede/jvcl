@@ -27,7 +27,7 @@ Known Issues:
       TJvHookInfos               -> TJvHookItem, TJvHookInfo, TJvHook
       TJvHookInfo                -> TJvHookData
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvWndProcHook.pas,v 1.5 2016-05-19 13:04:19 elias Exp $
 
 unit JvWndProcHook;
 
@@ -97,8 +97,8 @@ procedure ReleaseObj(AObject: TObject);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

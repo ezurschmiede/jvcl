@@ -19,7 +19,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDynControlEngineDBIntf.pas,v 1.5 2016-05-19 13:04:08 elias Exp $
 
 unit JvDynControlEngineDBIntf;
 
@@ -55,8 +55,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:08 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

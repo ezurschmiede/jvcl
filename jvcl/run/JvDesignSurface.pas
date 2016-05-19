@@ -28,7 +28,7 @@ Known Issues:
                on the form being designed.
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDesignSurface.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
 
 unit JvDesignSurface;
 
@@ -274,8 +274,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:07 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

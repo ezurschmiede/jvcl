@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvSlider.pas,v 1.5 2016-05-19 13:04:17 elias Exp $
 
 unit JvSlider;
 
@@ -119,8 +119,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:17 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

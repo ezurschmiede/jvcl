@@ -32,7 +32,7 @@ Known Issues:
         You can use it as a generic editor control inside a control grid.
           -- Warren Postma (warrenpstma att hotmail dott com)
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDBControls.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBControls;
 
@@ -726,8 +726,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:06 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

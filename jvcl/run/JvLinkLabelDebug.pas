@@ -26,7 +26,7 @@ Description:
 Known Issues:
   Please see the accompanying documentation.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvLinkLabelDebug.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 unit JvLinkLabelDebug;
 
@@ -53,8 +53,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:10 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

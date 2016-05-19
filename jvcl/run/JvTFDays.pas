@@ -48,7 +48,7 @@ These changes peform the following functions.
 5) Remove the focus rectangle when ShowFocus is false (the focus rect is not shown in Outlook).
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvTFDays.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
 
 unit JvTFDays;
 
@@ -1744,8 +1744,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -15,7 +15,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: windowsonly.inc,v 1.5 2016-05-19 13:02:34 elias Exp $
 
 // This inc file depends on jedi.inc which has to
 // be included first (usually indirectly through

@@ -25,7 +25,7 @@ Known Issues:
   * Automatic unlit color calculation is not working properly. Maybe a function in JclGraphUtil
     can help out there.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvSegmentedLEDDisplay.pas,v 1.5 2016-05-19 13:04:17 elias Exp $
 
 unit JvSegmentedLEDDisplay;
 
@@ -433,8 +433,8 @@ procedure UnregisterModuleSegmentedLEDDigitClasses(Module: HMODULE);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:17 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -25,7 +25,7 @@ Known Issues:
   * Only dropdown shadow for windows xp systems.
   * Only custom animation for windows xp systems, because of use of window region.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvBalloonHint.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
 
 unit JvBalloonHint;
 
@@ -292,8 +292,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:04 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

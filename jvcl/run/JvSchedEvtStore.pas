@@ -22,7 +22,7 @@
  You may retrieve the latest version of this file at the Project JEDI home
  page, located at http://www.delphi-jedi.org
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvSchedEvtStore.pas,v 1.5 2016-05-19 13:04:17 elias Exp $
 
 unit JvSchedEvtStore;
 
@@ -156,8 +156,8 @@ function ScheduledEventStore_Stream(const Stream: TStream; const Binary: Boolean
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:17 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

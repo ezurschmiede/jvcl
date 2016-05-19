@@ -23,7 +23,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvgLogicsEditorForm.pas,v 1.5 2016-05-19 13:02:39 elias Exp $
 
 unit JvgLogicsEditorForm;
 

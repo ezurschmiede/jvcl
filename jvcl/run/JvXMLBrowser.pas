@@ -21,7 +21,7 @@
 
   Known Issues:
   ----------------------------------------------------------------------------- }
-// $Id$
+// $Id: JvXMLBrowser.pas,v 1.1 2016-05-19 13:04:19 elias Exp $
 unit JvXMLBrowser;
 
 {$I jvcl.inc}
@@ -159,8 +159,8 @@ procedure ShowXMLBrowserFromFile(const iXMLFile: String; const iDialogCaption: s
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.1 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

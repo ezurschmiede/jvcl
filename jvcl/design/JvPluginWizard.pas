@@ -39,7 +39,7 @@ Known Issues:
  V 05 : uses-list minimized
 
  -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvPluginWizard.pas,v 1.5 2016-05-19 13:02:36 elias Exp $
 
 unit JvPluginWizard;
 

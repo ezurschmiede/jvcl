@@ -30,7 +30,7 @@ History:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvWizardsReg.pas,v 1.3 2016-05-19 13:02:38 elias Exp $
 
 unit JvWizardsReg;
 

@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues: This component does not parse the !DOCTYPE tags but preserves them
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvSimpleXml.pas,v 1.5 2016-05-19 13:04:17 elias Exp $
 
 unit JvSimpleXml;
 
@@ -189,8 +189,8 @@ function EntityDecode(const S: string): string; {$IFDEF SUPPORTS_DEPRECATED} dep
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:17 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

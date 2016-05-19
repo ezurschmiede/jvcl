@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvPascalInterpreterReg.pas,v 1.3 2016-05-19 13:02:36 elias Exp $
 
 unit JvPascalInterpreterReg;
 

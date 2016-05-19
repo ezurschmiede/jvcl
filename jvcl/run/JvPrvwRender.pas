@@ -24,7 +24,7 @@ Known Issues:
 * the TStrings previewer has a *very* simple word-wrap feature - use the RTF variant if possible
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvPrvwRender.pas,v 1.5 2016-05-19 13:04:13 elias Exp $
 
 unit JvPrvwRender;
 
@@ -270,8 +270,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:13 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
   this should be merged with other Registration Unit
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvJansReg.pas,v 1.5 2016-05-19 13:02:36 elias Exp $
 
 unit JvJansReg;
 

@@ -54,7 +54,7 @@ Known issues / not (yet) implemented features:
   - it really is a control for date entry only.
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDatePickerEdit.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
 
 unit JvDatePickerEdit;
 
@@ -362,8 +362,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:07 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

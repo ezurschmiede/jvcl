@@ -22,7 +22,7 @@ Contributor(s):
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvExplorerBarItems.pas,v 1.3 2016-05-19 13:04:08 elias Exp $
 
 unit JvExplorerBarItems;
 

@@ -34,7 +34,7 @@ Known Issues:
   you collapse / expand the Options property in the OI manually. No known solution yet. SOLVED
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvBehaviorLabel.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
 
 unit JvBehaviorLabel;
 
@@ -398,8 +398,8 @@ procedure GetRegisteredLabelBehaviorOptions(Strings: TStrings);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:04 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

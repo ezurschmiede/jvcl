@@ -64,7 +64,7 @@ Revisions : 1st = 2004/09/19
             7th = 2007/03/25
             8th = 2007/06/20
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvMemoryDataset.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
 
 unit JvMemoryDataset;
 
@@ -377,8 +377,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:11 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

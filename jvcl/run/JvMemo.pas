@@ -41,7 +41,7 @@ Known Issues:
   time of writing, that was the only method that worked to get the control
   to be refreshed. If you find a better way, please do the change.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvMemo.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
 
 unit JvMemo;
 
@@ -210,8 +210,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:11 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

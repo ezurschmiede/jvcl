@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
     2004-07-27 - Read the 'ALL USERS READ THIS' section below.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvZlibMultiple.pas,v 1.5 2016-05-19 13:04:19 elias Exp $
 
 {$I jvcl.inc}
 
@@ -170,8 +170,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -19,7 +19,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDynControlEngine.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
 
 unit JvDynControlEngine;
 
@@ -228,8 +228,8 @@ function DefaultDynControlEngine: TJvDynControlEngine;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:07 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

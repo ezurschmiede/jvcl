@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvVersionControlActions.pas,v 1.4 2016-05-19 13:04:18 elias Exp $
 
 unit JvVersionControlActions;
 
@@ -367,8 +367,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.4 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

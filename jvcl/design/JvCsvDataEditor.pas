@@ -25,7 +25,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvCsvDataEditor.pas,v 1.5 2016-05-19 13:02:35 elias Exp $
 
 unit JvCsvDataEditor;
 

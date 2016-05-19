@@ -98,7 +98,7 @@ Maciej Kaczkowski:
       when alignement is not left (need to rebuild the ItemHTDrawEx draw
       function)
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvHtControls.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 unit JvHtControls;
 
@@ -433,8 +433,8 @@ function PrepareText(const A: string): string; deprecated;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

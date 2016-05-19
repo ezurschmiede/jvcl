@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvPainterEffectsForm.pas,v 1.5 2016-05-19 13:04:12 elias Exp $
 
 unit JvPainterEffectsForm;
 
@@ -61,8 +61,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:12 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

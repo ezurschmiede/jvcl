@@ -27,7 +27,7 @@ negative number format, negative currency format and positive currency format.
 This could be rectified by a custom-written formatting routine.
 
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvValidateEdit.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
 
 unit JvValidateEdit;
 
@@ -352,8 +352,8 @@ const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile:
       '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

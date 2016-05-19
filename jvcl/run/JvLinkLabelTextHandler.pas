@@ -46,7 +46,7 @@ Description:
   Note: Documentation for this unit can be found in Doc\Source.txt and
         Doc\Readme.txt!
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvLinkLabelTextHandler.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 unit JvLinkLabelTextHandler;
 
@@ -184,8 +184,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:10 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

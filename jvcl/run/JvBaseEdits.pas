@@ -27,7 +27,7 @@ Known Issues:
        example DecimalPlaces/Decimal, CheckMinValue (name indicates action?
        maybe better: TJvValidateEdit's HasMinValue) etc.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvBaseEdits.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
 
 unit JvBaseEdits;
 
@@ -320,8 +320,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:04 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -23,7 +23,7 @@ description : interface to design-time routines
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDsgnIntf.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
 
 unit JvDsgnIntf;
 
@@ -62,8 +62,8 @@ var
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:07 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

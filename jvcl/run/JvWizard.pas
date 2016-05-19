@@ -23,7 +23,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvWizard.pas,v 1.6 2016-05-19 13:04:19 elias Exp $
 
 {+---------------------------------------------------------------------------+
  | CONTRIBUTORS:                                                             |
@@ -811,7 +811,7 @@ type
     procedure ShowControl(AControl: TControl); override;
     procedure Paint; override;
     procedure Resize; override;
-    procedure InsertPage(Page: TJvWizardCustomPage);
+    procedure InsertPage(Page: TJvWizardCustomPage); virtual; // EZ - make virtual
     procedure RemovePage(Page: TJvWizardCustomPage);
     procedure Notification(AComponent: TComponent; Operation: TOperation); override;
     function GetButtonControlClass(AKind: TJvWizardButtonKind): TJvWizardButtonControlClass; virtual;
@@ -879,8 +879,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-05-19 13:04:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

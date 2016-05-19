@@ -25,7 +25,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvFindFiles.pas,v 1.5 2016-05-19 13:04:08 elias Exp $
 
 unit JvFindFiles;
 
@@ -73,8 +73,8 @@ function FindFilesDlg(ParentWnd: HWND; const StartIn: string; SpecialFolder: TJv
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:08 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -28,7 +28,7 @@ but driver is available for manual installation (search for 'NetBEUI' on
 www.microsoft.com). Delivery network messages longer then 1365 bytes can be
 problem too (if it's possible at all).
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvMailSlots.pas,v 1.4 2016-05-19 13:04:11 elias Exp $
 
 unit JvMailSlots;
 
@@ -101,8 +101,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.4 $';
+    Date: '$Date: 2016-05-19 13:04:11 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

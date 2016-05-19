@@ -25,7 +25,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
   Doesn't work with Paegasus Mail because it has no MAPI support at all.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvMail.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
 
 unit JvMail;
 
@@ -183,8 +183,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:11 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

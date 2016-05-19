@@ -24,7 +24,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvTimerListEditor.pas,v 1.5 2016-05-19 13:02:38 elias Exp $
 
 unit JvTimerListEditor;
 

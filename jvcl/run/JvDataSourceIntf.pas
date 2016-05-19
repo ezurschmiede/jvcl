@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDataSourceIntf.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
 
 unit JvDataSourceIntf;
 

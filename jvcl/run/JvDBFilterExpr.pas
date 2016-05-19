@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDBFilterExpr.pas,v 1.4 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBFilterExpr;
 

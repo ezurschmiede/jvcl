@@ -19,7 +19,7 @@ located at http://jcl.delphi-jedi.org
 Known Issues:
 -----------------------------------------------------------------------------}
 
-// Last modified: $Date$
+// Last modified: $Date: 2016-05-19 13:02:34 $
 // For history see end of file
 
 // This file is intended for C header conversions.
@@ -111,7 +111,10 @@ Known Issues:
 
 // History:
 
-// $Log$
+// $Log: windowsversion.inc,v $
+// Revision 1.5  2016-05-19 13:02:34  elias
+// *** empty log message ***
+//
 // Revision 1.3  2006/02/11 16:50:17  marquardt
 // another fix to SetupApi.pas, windowsversion.inc defaults to Win98
 //

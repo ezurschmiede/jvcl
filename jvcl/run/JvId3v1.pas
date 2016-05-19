@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvId3v1.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 unit JvId3v1;
 
@@ -106,8 +106,8 @@ function WriteID3v1Tag(const AFileName: string; const ATag: TID3v1Tag): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -30,7 +30,7 @@ Known Issues:
   Some russian comments were translated to english; these comments are marked
   with [translated]
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvEditor.pas,v 1.7 2016-05-19 13:04:08 elias Exp $
 
 unit JvEditor;
 
@@ -384,8 +384,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2016-05-19 13:04:08 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -35,7 +35,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvxCheckListBox.pas,v 1.5 2016-05-19 13:04:20 elias Exp $
 
 unit JvxCheckListBox;
 
@@ -314,8 +314,8 @@ function CheckBitmap: TBitmap;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:20 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

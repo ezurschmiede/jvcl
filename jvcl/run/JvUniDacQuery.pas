@@ -23,7 +23,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvUniDacQuery.pas,v 1.3 2016-05-19 13:04:18 elias Exp $
 
 unit JvUniDacQuery;
 
@@ -234,8 +234,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.3 $';
+    Date: '$Date: 2016-05-19 13:04:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

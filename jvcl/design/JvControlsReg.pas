@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvControlsReg.pas,v 1.3 2016-05-19 13:02:35 elias Exp $
 
 unit JvControlsReg;
 

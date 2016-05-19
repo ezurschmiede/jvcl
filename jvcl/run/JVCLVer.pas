@@ -32,7 +32,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JVCLVer.pas,v 1.5 2016-05-19 13:04:03 elias Exp $
 
 unit JVCLVer;
 
@@ -64,8 +64,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:03 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

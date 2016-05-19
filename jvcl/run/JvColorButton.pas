@@ -26,7 +26,7 @@ Known Issues:
     If the OtherCaption is set to an empty string, the default '&Other..' magically appears.
     Solution: Set OtherCaption to ' ' instead
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvColorButton.pas,v 1.5 2016-05-19 13:04:05 elias Exp $
 
 unit JvColorButton;
 
@@ -136,8 +136,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:05 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

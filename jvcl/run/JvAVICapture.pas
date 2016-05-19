@@ -31,7 +31,7 @@ Description: This unit defines a component that you can drop on any form or
 
 Known Issues: none known
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvAVICapture.pas,v 1.5 2016-05-19 13:04:03 elias Exp $
 
 unit JvAVICapture;
 
@@ -557,8 +557,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:03 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

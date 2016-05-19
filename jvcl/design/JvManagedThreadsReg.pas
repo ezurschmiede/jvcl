@@ -18,7 +18,7 @@ Contributor(s):
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvManagedThreadsReg.pas,v 1.5 2016-05-19 13:02:36 elias Exp $
 
 unit JvManagedThreadsReg;
 

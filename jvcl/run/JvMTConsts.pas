@@ -18,7 +18,7 @@ Contributor(s): ______________________________________.
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvMTConsts.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
 
 unit JvMTConsts;
 
@@ -58,8 +58,8 @@ const
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:11 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -52,7 +52,7 @@ KNOWN ISSUES:
 -----------------------------------------------------------------------------
 2004/07/08 - WPostma merged changes by Frédéric Leneuf-Magaud and ahuser.}
 
-// $Id$
+// $Id: JvDBGrid.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBGrid;
 
@@ -658,8 +658,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:06 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

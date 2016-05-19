@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvControlActionsEngineCxEditors.pas,v 1.3 2016-05-19 13:04:05 elias Exp $
 
 unit JvControlActionsEngineCxEditors;
 
@@ -54,8 +54,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.3 $';
+    Date: '$Date: 2016-05-19 13:04:05 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

@@ -25,7 +25,7 @@ Known Issues:
   * Some tags are not supported, see var DefaultFrameClasses. Values nil in that
     list indicate not supported frames.
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvID3v2Base.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
 
 unit JvID3v2Base;
 
@@ -1184,8 +1184,8 @@ function NiceGenreToGenre(const ANiceGenre: string): string;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:09 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

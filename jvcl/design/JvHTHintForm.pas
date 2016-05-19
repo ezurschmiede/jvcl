@@ -23,7 +23,7 @@ description : Design-time Hint Editor
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvHTHintForm.pas,v 1.5 2016-05-19 13:02:35 elias Exp $
 
 unit JvHTHintForm;
 

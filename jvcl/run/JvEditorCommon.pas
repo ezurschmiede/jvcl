@@ -23,7 +23,7 @@ Remko Bonte
 You may retrieve the latest version of this file at the Project JEDI's JVCL home page,
 located at http://jvcl.delphi-jedi.org
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvEditorCommon.pas,v 1.7 2016-05-19 13:04:08 elias Exp $
 
 { history
  (JVCL Library versions) :
@@ -1385,8 +1385,8 @@ function KeyPressed(VK: Integer): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2016-05-19 13:04:08 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

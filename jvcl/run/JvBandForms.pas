@@ -21,7 +21,7 @@ located at http://www.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvBandForms.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
 
 unit JvBandForms;
 
@@ -298,8 +298,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:04 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

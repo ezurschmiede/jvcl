@@ -28,7 +28,7 @@ Description: JvInterpreter_Math adds most functions from math.pas to
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvInterpreter_Math.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
 
 { history (JVCL Library versions):
 

@@ -36,7 +36,7 @@ inherit it with JVCL3 from JvDBLookupEdit, the specified errors occur.
 
 Michael Habbe [2003-10-20]
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDBLookupComboEdit.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBLookupComboEdit;
 
@@ -162,8 +162,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:06 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

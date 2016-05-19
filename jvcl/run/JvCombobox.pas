@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvCombobox.pas,v 1.5 2016-05-19 13:04:05 elias Exp $
 
 unit JvCombobox;
 
@@ -413,8 +413,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.5 $';
+    Date: '$Date: 2016-05-19 13:04:05 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

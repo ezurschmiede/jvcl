@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id$
+// $Id: JvDBPasswordDialogUniDac.pas,v 1.3 2016-05-19 13:04:06 elias Exp $
 
 unit JvDBPasswordDialogUniDac;
 
@@ -60,8 +60,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision$';
-    Date: '$Date$';
+    Revision: '$Revision: 1.3 $';
+    Date: '$Date: 2016-05-19 13:04:06 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

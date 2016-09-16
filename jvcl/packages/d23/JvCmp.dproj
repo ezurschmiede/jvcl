@@ -91,7 +91,6 @@
             <Form>FoLog</Form>
         </DCCReference>
         <DCCReference Include="..\..\run\JvMergeManager.pas"/>
-        <DCCReference Include="..\..\run\JvControlComponent.pas"/>
         <DCCReference Include="..\..\run\JvSpellChecker.pas"/>
         <DCCReference Include="..\..\run\JvSpellerForm.pas">
             <Form>JvSpellerForm</Form>

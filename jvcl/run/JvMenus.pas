@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvMenus.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
+// $Id: JvMenus.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvMenus;
 
@@ -769,8 +769,8 @@ function StripHotkeyPrefix(const Text: string): string; // MBCS
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:11 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

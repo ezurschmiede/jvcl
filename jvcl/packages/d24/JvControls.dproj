@@ -1,14 +1,15 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
     <PropertyGroup>
         <ProjectGuid>{FA36E6EE-9969-480E-B60D-09412CA9B183}</ProjectGuid>
         <MainSource>JvControls.dpk</MainSource>
-        <ProjectVersion>17.3</ProjectVersion>
+        <ProjectVersion>18.1</ProjectVersion>
         <Config Condition="'$(Config)'==''">Release</Config>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <FrameworkType>VCL</FrameworkType>
         <Base>True</Base>
         <Platform Condition="'$(Platform)'==''">Win32</Platform>
         <AppType>Package</AppType>
+        <TargetedPlatforms>1</TargetedPlatforms>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
         <Base>true</Base>
@@ -101,7 +102,9 @@
         <DCCReference Include="..\..\run\JvScrollText.pas"/>
         <DCCReference Include="..\..\run\JvSpacer.pas"/>
         <DCCReference Include="..\..\run\JvSpeedbar.pas"/>
-        <DCCReference Include="..\..\run\JvSpeedbarSetupForm.pas"/>
+        <DCCReference Include="..\..\run\JvSpeedbarSetupForm.pas">
+            <Form>JvSpeedbarSetupWindow</Form>
+        </DCCReference>
         <DCCReference Include="..\..\run\JvSplit.pas"/>
         <DCCReference Include="..\..\run\JvSplitter.pas"/>
         <DCCReference Include="..\..\run\JvSwitch.pas"/>
@@ -125,12 +128,12 @@
         <DCCReference Include="..\..\run\JvVersionControlActionsEngine.pas"/>
         <DCCReference Include="..\..\run\JvVersionControlActionsEngineFileListBox.pas"/>
         <DCCReference Include="..\..\run\JvXMLBrowser.pas"/>
-        <BuildConfiguration Include="Base">
-            <Key>Base</Key>
-        </BuildConfiguration>
         <BuildConfiguration Include="Debug">
             <Key>Cfg_2</Key>
             <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
         </BuildConfiguration>
         <BuildConfiguration Include="Release">
             <Key>Cfg_1</Key>
@@ -181,8 +184,7 @@
             </Delphi.Personality>
             <Platforms>
                 <Platform value="Android">False</Platform>
-                <Platform value="iOSDevice">False</Platform>
-                <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">False</Platform>
+                <Platform value="iOSSimulator">False</Platform>
                 <Platform value="OSX32">False</Platform>
                 <Platform value="Win32">True</Platform>
                 <Platform value="Win64">False</Platform>
@@ -192,3 +194,11 @@
     </ProjectExtensions>
     <Import Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')" Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj"/>
 </Project>
+
+<!-- EurekaLog First Line
+[Exception Log]
+EurekaLog Version=7007
+Activate=0
+DeleteMapAfterCompile=0
+Encrypt Password=""
+EurekaLog Last Line -->

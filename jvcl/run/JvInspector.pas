@@ -156,7 +156,7 @@
       - System Sound (Beep) on enter key removed.
 
 -----------------------------------------------------------------------------}
-// $Id: JvInspector.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
+// $Id: JvInspector.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvInspector;
 
@@ -2090,8 +2090,8 @@ procedure RestoreCanvasState(const Canvas: TCanvas; const SavedIdx: Integer);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:09 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

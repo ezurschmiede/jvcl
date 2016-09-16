@@ -27,7 +27,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
   (rb) Move button related functionality from TJvCustomComboEdit to TJvEditButton
 -----------------------------------------------------------------------------}
-// $Id: JvToolEdit.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvToolEdit.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvToolEdit;
 
@@ -1141,8 +1141,8 @@ function IsInWordArray(Value: Word; const A: array of Word): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:18 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
 
 -----------------------------------------------------------------------------}
-// $Id: JvPageListTreeViewReg.pas,v 1.5 2016-05-19 13:02:36 elias Exp $
+// $Id: JvPageListTreeViewReg.pas,v 1.6 2016-09-16 15:57:11 elias Exp $
 
 unit JvPageListTreeViewReg;
 

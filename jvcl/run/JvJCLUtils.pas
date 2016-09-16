@@ -26,7 +26,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
 
 -----------------------------------------------------------------------------}
-// $Id: JvJCLUtils.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
+// $Id: JvJCLUtils.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvJCLUtils;
 
@@ -1106,8 +1106,8 @@ procedure CollectionSort(Collection: Classes.TCollection; SortProc: TCollectionS
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:10 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

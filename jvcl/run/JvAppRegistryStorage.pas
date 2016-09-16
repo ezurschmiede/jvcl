@@ -51,7 +51,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvAppRegistryStorage.pas,v 1.5 2016-05-19 13:04:03 elias Exp $
+// $Id: JvAppRegistryStorage.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvAppRegistryStorage;
 
@@ -141,8 +141,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:03 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

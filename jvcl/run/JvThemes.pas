@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvThemes.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvThemes.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvThemes;
 
@@ -840,8 +840,8 @@ procedure DrawGlassableImageList(ImageList: HIMAGELIST; Index: Integer; Dest: HD
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:18 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

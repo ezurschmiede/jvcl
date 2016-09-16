@@ -28,7 +28,7 @@ Known Issues:
                (report for instance). As a workaround, always change the item's
                properties, never the canvas' directly.
 -----------------------------------------------------------------------------}
-// $Id: JvListView.pas,v 1.5 2016-05-19 13:04:10 elias Exp $
+// $Id: JvListView.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvListView;
 
@@ -535,8 +535,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:10 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2016-09-16 15:57:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}

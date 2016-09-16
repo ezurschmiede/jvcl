@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvVersionInfo.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvVersionInfo.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
 
 unit JvVersionInfo;
 

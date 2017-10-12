@@ -25,7 +25,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvDBSearchComboBox.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
+// $Id: JvDBSearchComboBox.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvDBSearchComboBox;
 
@@ -187,8 +187,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:06 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -353,7 +353,7 @@ begin
   begin
     FChanging := True;
     try
-      FDataLink.DataSet.GotoBookmark(Pointer(Items.Objects[ItemIndex]));
+      FDataLink.DataSet.GotoBookmark({$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(Pointer(Items.Objects[ItemIndex])));
     finally
       FChanging := False;
     end;

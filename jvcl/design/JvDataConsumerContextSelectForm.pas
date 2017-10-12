@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvDataConsumerContextSelectForm.pas,v 1.5 2016-05-19 13:02:35 elias Exp $
+// $Id: JvDataConsumerContextSelectForm.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvDataConsumerContextSelectForm;
 
@@ -65,7 +65,9 @@ var
   ConsumerContext: IJvDataConsumerContext;
   CtxItem: IJvDataItem;
 begin
+  {$IFNDEF COMPILER25_UP}
   Result := False;
+  {$ENDIF ~COMPILER25_UP}
   SelectForm := TfrmDataConsumerContextSelect.Create(Application);
   try
     SelectForm.Consumer := AConsumer;

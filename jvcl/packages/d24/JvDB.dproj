@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{E63D1285-7625-4EFA-9DD7-632D72CF633C}</ProjectGuid>
         <MainSource>JvDB.dpk</MainSource>
-        <ProjectVersion>18.1</ProjectVersion>
+        <ProjectVersion>18.2</ProjectVersion>
         <Config Condition="'$(Config)'==''">Release</Config>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <FrameworkType>VCL</FrameworkType>

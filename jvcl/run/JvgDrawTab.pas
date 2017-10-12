@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvgDrawTab.pas,v 1.5 2016-05-19 13:04:19 elias Exp $
+// $Id: JvgDrawTab.pas,v 1.6 2017-10-12 10:01:19 elias Exp $
 
 unit JvgDrawTab;
 
@@ -43,8 +43,8 @@ procedure DrawOwnTab(DrawTabStr: TDRAWTABSTRUCT);
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:19 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:19 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -368,7 +368,7 @@ begin
             fhaCenter:
               X := R1.Left + (R1.Right - R1.Left + Size.cx) div 2;
             fhaRight:
-              Y := R1.Left + Size.cx;
+              X := R1.Left + Size.cx;
           end;
           case CaptionVAlign of
             fvaTop:

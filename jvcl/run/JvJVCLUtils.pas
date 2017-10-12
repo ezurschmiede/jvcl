@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvJVCLUtils.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvJVCLUtils.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvJVCLUtils;
 
@@ -872,8 +872,8 @@ function ReplaceComponentReference(This, NewReference: TComponent; var VarRefere
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -5289,7 +5289,9 @@ var
   ColorCount: Integer;
   SourceBitmapFormat: TPixelFormat;
 begin
+  {$IFNDEF COMPILER25_UP}
   Result := nil;
+  {$ENDIF ~COMPILER25_UP}
   if Bitmap.Handle = 0 then
     InvalidBitmap;
   SourceBitmapFormat := GetBitmapPixelFormat(Bitmap);

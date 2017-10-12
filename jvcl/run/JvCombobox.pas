@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvCombobox.pas,v 1.5 2016-05-19 13:04:05 elias Exp $
+// $Id: JvCombobox.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvCombobox;
 
@@ -413,8 +413,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:05 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -1754,7 +1754,7 @@ end;
 
 procedure TJvCustomComboBox.KeyPress(var Key: Char);
 begin
-  if (ReadOnly) and (Key = Chr(VK_BACK)) then
+  if ReadOnly and (AutoComplete or (Key = Chr(VK_BACK))) then
     Key := #0;
   inherited KeyPress(Key);
 end;

@@ -23,7 +23,7 @@ Description:
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvBaseDBThreadedDataset.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
+// $Id: JvBaseDBThreadedDataset.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvBaseDBThreadedDataset;
 
@@ -407,8 +407,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:04 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}
@@ -486,14 +486,17 @@ begin
   CreateTextPanel(Self, MainPanel, FTimePanel, FTimeLabel, FTimeStaticText, 'Time');
   if Supports(FTimeLabel, IJvDynControlCaption, ITmpControl) then
     ITmpControl.ControlSetCaption(RsODSOpenFetch);
+  FTimeLabel.Top := 0;
   CreateTextPanel(Self, MainPanel, FRowsPanel, FRowsLabel, FRowsStaticText, 'Rows');
   if Supports(FRowsLabel, IJvDynControlCaption, ITmpControl) then
     ITmpControl.ControlSetCaption(RsODSCurrentRecord);
+  FRowsPanel.Top := FTimeLabel.Top + FTimeLabel.Height + 1;
   FCancelButtonPanel := DynControlEngine.CreatePanelControl(Self, MainPanel, 'ButtonPanel', '', alTop);
   FCancelBtn := DynControlEngine.CreateButton(Self, FCancelButtonPanel,
     'CancelBtn', RsButtonCancelCaption, '', DefaultCancelBtnClick, True, True);
   FCancelBtn.Anchors := [akTop];
   FCancelBtn.Top := 2;
+  FCancelButtonPanel.Top := FRowsPanel.Top + FRowsPanel.Height + 1;
   FCancelButtonPanel.Height := FCancelBtn.Height + 3;
 
   BorderIcons := [];

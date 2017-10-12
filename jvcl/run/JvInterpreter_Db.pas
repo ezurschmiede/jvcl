@@ -23,7 +23,7 @@ Description : adapter unit - converts JvInterpreter calls to delphi calls
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvInterpreter_Db.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
+// $Id: JvInterpreter_Db.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvInterpreter_Db;
 
@@ -43,8 +43,8 @@ procedure RegisterJvInterpreterAdapter(JvInterpreterAdapter: TJvInterpreterAdapt
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:09 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -1937,7 +1937,7 @@ end;
 
 procedure TDataSet_BookmarkValid(var Value: Variant; Args: TJvInterpreterArgs);
 begin
-  Value := TDataSet(Args.Obj).BookmarkValid(V2P(Args.Values[0]));
+  Value := TDataSet(Args.Obj).BookmarkValid({$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(V2P(Args.Values[0])));
 end;
 
 { procedure Cancel; }
@@ -1979,7 +1979,7 @@ end;
 
 procedure TDataSet_CompareBookmarks(var Value: Variant; Args: TJvInterpreterArgs);
 begin
-  Value := TDataSet(Args.Obj).CompareBookmarks(V2P(Args.Values[0]), V2P(Args.Values[1]));
+  Value := TDataSet(Args.Obj).CompareBookmarks({$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(V2P(Args.Values[0])), {$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(V2P(Args.Values[1])));
 end;
 
 { function CreateBlobStream(Field: TField; Mode: TBlobStreamMode): TStream; }
@@ -2077,7 +2077,7 @@ end;
 
 procedure TDataSet_FreeBookmark(var Value: Variant; Args: TJvInterpreterArgs);
 begin
-  TDataSet(Args.Obj).FreeBookmark(V2P(Args.Values[0]));
+  TDataSet(Args.Obj).FreeBookmark({$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(V2P(Args.Values[0])));
 end;
 
 { function GetBookmark: TBookmark; }
@@ -2118,7 +2118,7 @@ end;
 
 procedure TDataSet_GotoBookmark(var Value: Variant; Args: TJvInterpreterArgs);
 begin
-  TDataSet(Args.Obj).GotoBookmark(V2P(Args.Values[0]));
+  TDataSet(Args.Obj).GotoBookmark({$IFDEF RTL200_UP}TBookmark{$ENDIF RTL200_UP}(V2P(Args.Values[0])));
 end;
 
 { procedure Insert; }

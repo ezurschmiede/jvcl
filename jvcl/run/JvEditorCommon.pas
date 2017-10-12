@@ -23,7 +23,7 @@ Remko Bonte
 You may retrieve the latest version of this file at the Project JEDI's JVCL home page,
 located at http://jvcl.delphi-jedi.org
 -----------------------------------------------------------------------------}
-// $Id: JvEditorCommon.pas,v 1.7 2016-05-19 13:04:08 elias Exp $
+// $Id: JvEditorCommon.pas,v 1.8 2017-10-12 10:01:18 elias Exp $
 
 { history
  (JVCL Library versions) :
@@ -1385,8 +1385,8 @@ function KeyPressed(VK: Integer): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.7 $';
-    Date: '$Date: 2016-05-19 13:04:08 $';
+    Revision: '$Revision: 1.8 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -2506,6 +2506,7 @@ function TJvBracketHighlighting.CreateStringMap(const Text: string): TDynBoolArr
 var
   LenText: Integer;
   i, j, Idx, InStr: Integer;
+  Ch: Char;
 begin
   LenText := Length(Text);
   SetLength(Result, LenText);
@@ -2527,7 +2528,18 @@ begin
         Continue;
       end;
 
-      Idx := Pos(Text[i + 1], StringChars);
+      //Idx := Pos(Text[i + 1], StringChars); // causes Char->String conversion for every char in Text
+      Idx := 0;
+      Ch := Text[i + 1];
+      for j := 1 to Length(StringChars) do
+      begin
+        if Ch = StringChars[j] then
+        begin
+          Idx := j;
+          Break;
+        end;
+      end;
+
       if Idx > 0 then
       begin
         if InStr = Idx then
@@ -6040,25 +6052,27 @@ end;
 procedure TJvErrorHighlighting.PaintError(Canvas: TCanvas; Col, Line: Integer;
   const R: TRect; Len: Integer; const MyDi: TDynIntArray);
 var
-  I, Width, X: Integer;
+  I, Width, X, EndCol: Integer;
   Errors: TDynBoolArray;
 begin
   Errors := GetLineErrorMap(Line);
   X := R.Left;
-  for I := Col to Col + Len - 1 do
+  EndCol := Length(MyDi) - 1;
+  if Col + Len - 1 < EndCol then
+    EndCol := Col + Len - 1;
+  if EndCol >= Length(Errors) then
+    EndCol := Length(Errors) - 1;
+  for I := Col to EndCol do
   begin
     Width := MyDi[I];
-    if (I <= High(Errors)) and Errors[I] then
+    if Errors[I] then
     begin
-      with Canvas do
-      begin
-        Pen.Color := clRed;
-        MoveTo(X, R.Bottom - 1);
-        LineTo(X + Width div 4, R.Bottom - 4);
-        LineTo(X + Width div 4 * 2, R.Bottom - 1);
-        LineTo(X + Width div 4 * 3, R.Bottom - 4);
-        LineTo(X + Width, R.Bottom - 1);
-      end;
+      Canvas.Pen.Color := clRed;
+      Canvas.MoveTo(X, R.Bottom - 1);
+      Canvas.LineTo(X + Width div 4, R.Bottom - 4);
+      Canvas.LineTo(X + Width div 4 * 2, R.Bottom - 1);
+      Canvas.LineTo(X + Width div 4 * 3, R.Bottom - 4);
+      Canvas.LineTo(X + Width, R.Bottom - 1);
     end;
     Inc(X, Width);
   end;

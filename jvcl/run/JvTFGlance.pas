@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvTFGlance.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvTFGlance.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvTFGlance;
 
@@ -758,8 +758,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:18 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -3544,7 +3544,9 @@ function TJvTFGlanceViewer.GetDistinctAppt(Index: Integer): TJvTFAppt;
 var
   ApptList: TStringList;
 begin
+  {$IFNDEF COMPILER25_UP}
   Result := nil;
+  {$ENDIF ~COMPILER25_UP}
   ApptList := TStringList.Create;
   try
     GetDistinctAppts(ApptList);

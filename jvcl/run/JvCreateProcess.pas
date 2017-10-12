@@ -24,7 +24,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvCreateProcess.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
+// $Id: JvCreateProcess.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvCreateProcess;
 
@@ -233,8 +233,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:06 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -1024,7 +1024,9 @@ var
   BytesWritten: Cardinal;
   BytesToWrite: Cardinal;
 begin
+  {$IFNDEF COMPILER25_UP}
   Result := True;
+  {$ENDIF ~COMPILER25_UP}
 
   FWriteLock.Acquire;
   try

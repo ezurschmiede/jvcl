@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvMaxPixel.pas,v 1.5 2016-05-19 13:04:11 elias Exp $
+// $Id: JvMaxPixel.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvMaxPixel;
 
@@ -65,8 +65,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:11 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -132,7 +132,6 @@ begin
 
   with TControlCanvas.Create do
     try
-      Result := False;
       Control := FParent;
       if FUseControlFont then
         Font.Assign(ParentFont)

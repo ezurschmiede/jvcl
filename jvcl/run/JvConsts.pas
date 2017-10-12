@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvConsts.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvConsts.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvConsts;
 
@@ -106,7 +106,10 @@ const
   {$ENDIF DELPHI23}
   {$IFDEF DELPHI24}
   SDelphiKey = 'Software\Embarcadero\BDS\18.0';
-  {$ENDIF DELPHI23}
+  {$ENDIF DELPHI24}
+  {$IFDEF DELPHI25}
+  SDelphiKey = 'Software\Embarcadero\BDS\19.0';
+  {$ENDIF DELPHI25}
 
   {$IF not declared(SDelphiKey)}
     {$MESSAGE FATAL 'Declaration for SDelphiKey is missing'}
@@ -253,8 +256,8 @@ const
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}

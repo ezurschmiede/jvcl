@@ -23,7 +23,7 @@ Description : adapter unit - converts JvInterpreter calls to delphi calls
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvInterpreter_Classes.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
+// $Id: JvInterpreter_Classes.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvInterpreter_Classes;
 
@@ -46,8 +46,8 @@ procedure RegisterJvInterpreterAdapter(JvInterpreterAdapter: TJvInterpreterAdapt
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:09 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -870,13 +870,13 @@ begin
   Value := O2V(TMemoryStream.Create);
 end;
 
-{ TJvStringStream  }
+{ TStringStream }
 
 { constructor Create(AString: string) }
 
 procedure TStringStream_Create(var Value: Variant; Args: TJvInterpreterArgs);
 begin
-  Value := O2V(TStringStream.Create(Args.Values[0]));
+  Value := O2V(TStringStream.Create({$IFDEF RTL320_UP}string{$ENDIF RTL320_UP}(Args.Values[0])));
 end;
 
 { function Read(var Buffer; Count: Longint): Longint; }
@@ -1289,8 +1289,8 @@ begin
     { TMemoryStream }
     AddClass(cClasses, TMemoryStream, 'TMemoryStream');
     AddGet(TMemoryStream, 'Create', TMemoryStream_Create, 0, [varEmpty], varEmpty);
-    { TJvStringStream  }
-    AddClass(cClasses, TStringStream, 'TStringStream ');
+    { TStringStream }
+    AddClass(cClasses, TStringStream, 'TStringStream');
     AddGet(TStringStream, 'Create', TStringStream_Create, 1, [varEmpty], varEmpty);
     AddGet(TStringStream, 'Read', TStringStream_Read, 2, [varByRef, varEmpty], varEmpty);
     AddGet(TStringStream, 'ReadString', TStringStream_ReadString, 1, [varEmpty], varEmpty);

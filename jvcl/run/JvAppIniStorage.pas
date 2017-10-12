@@ -24,7 +24,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvAppIniStorage.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvAppIniStorage.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvAppIniStorage;
 
@@ -179,8 +179,8 @@ procedure LoadPropertyStoreFromIniFile(APropertyStore: TJvCustomPropertyStore;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -238,7 +238,7 @@ end;
 type
   TMemIniFileAccess = class(TCustomIniFile)
   {$IFDEF RTL310_UP} // 10.1 Berlin removed the access to private fields
-    {$IFDEF RTL320_UP}
+    {$IFDEF RTL330_UP}
       {$MESSAGE WARN 'Check that the new RTL still has FSections as the first member of TMemIniFile'}
     {$ENDIF RTL320_UP}
   private

@@ -2,7 +2,7 @@
     <PropertyGroup>
         <ProjectGuid>{9F0A300E-7B7A-4B5A-A5F9-B2A6D3D81A1C}</ProjectGuid>
         <MainSource>JvPascalInterpreterDesign.dpk</MainSource>
-        <ProjectVersion>18.1</ProjectVersion>
+        <ProjectVersion>18.2</ProjectVersion>
         <Config Condition="'$(Config)'==''">Release</Config>
         <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
         <FrameworkType>VCL</FrameworkType>

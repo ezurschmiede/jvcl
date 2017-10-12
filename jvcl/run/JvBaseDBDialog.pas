@@ -20,7 +20,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvBaseDBDialog.pas,v 1.5 2016-05-19 13:04:04 elias Exp $
+// $Id: JvBaseDBDialog.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvBaseDBDialog;
 
@@ -69,8 +69,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:04 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}
@@ -102,6 +102,11 @@ function TJvBaseDBDialog.Execute(ParentWnd: HWND): Boolean;
 begin
   if not Assigned(Session) then
     Abort;
+  if Assigned(FDBDialog) then
+  begin
+    Result := False;
+    Exit;
+  end;
   FParentWnd := ParentWnd;
   FDBDialog := CreateForm;
   try

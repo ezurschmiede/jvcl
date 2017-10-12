@@ -22,7 +22,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvSegmentedLEDDisplayMapperFrame.pas,v 1.5 2016-05-19 13:04:17 elias Exp $
+// $Id: JvSegmentedLEDDisplayMapperFrame.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvSegmentedLEDDisplayMapperFrame;
 
@@ -149,8 +149,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:17 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -227,7 +227,9 @@ begin
       Mapper.SaveToFile(FileName);
       FMapperModified := False;
     except
+      {$IFNDEF COMPILER25_UP}
       Result := False;
+      {$ENDIF ~COMPILER25_UP}
       raise;
     end;
   finally

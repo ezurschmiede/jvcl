@@ -51,7 +51,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvAppRegistryStorage.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvAppRegistryStorage.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvAppRegistryStorage;
 
@@ -141,8 +141,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -337,7 +337,9 @@ begin
       Result := True;
       if ListIsValue and (RegQueryValueEx(PathHKEY, cCount, nil, nil, nil, nil) = ERROR_SUCCESS) then
       begin
+        {$IFNDEF COMPILER25_UP}
         Result := False;
+        {$ENDIF ~COMPILER25_UP}
         I := 0;
         repeat
           NameLen := SizeOf(Name);
@@ -467,7 +469,9 @@ var
   {$ENDIF CPUX64}
 begin
   SplitKeyPath(Path, SubKey, ValueName);
+  {$IFNDEF COMPILER25_UP}
   Result := Default;
+  {$ENDIF ~COMPILER25_UP}
   try
     if not RegGetDataType(FRegHKEY, SubKey, ValueName, DataType) or (DataType = REG_BINARY) then
     begin

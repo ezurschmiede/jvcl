@@ -39,7 +39,7 @@ Known Issues:
  V 05 : uses-list minimized
 
  -----------------------------------------------------------------------------}
-// $Id: JvPluginWizard.pas,v 1.6 2016-09-16 15:57:11 elias Exp $
+// $Id: JvPluginWizard.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvPluginWizard;
 
@@ -491,6 +491,7 @@ begin
     {$ENDIF BCB}
     {$IFDEF DELPHI}
     Repository := Installations.DelphiInstallationFromVersion[
+      {$IFDEF DELPHI25} 25 {$ENDIF} 
       {$IFDEF DELPHI24} 24 {$ENDIF} 
       {$IFDEF DELPHI23} 23 {$ENDIF} 
       {$IFDEF DELPHI22} 22 {$ENDIF} 

@@ -24,7 +24,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvDockControlForm.pas,v 1.5 2016-05-19 13:04:07 elias Exp $
+// $Id: JvDockControlForm.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 { Changes:
 
@@ -867,8 +867,8 @@ procedure InvalidateDockHostSiteOfControl(Control: TControl; FocusLost: Boolean)
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:07 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}
@@ -4677,6 +4677,7 @@ procedure TJvDockSplitterStyle.AssignToSplitter(Dest: TJvDockSplitter);
 begin
   Dest.Color := Color;
   Dest.Cursor := Cursor;
+  Dest.MinSize := MinSize;
   Dest.ParentColor := ParentColor;
   Dest.ResizeStyle := ResizeStyle;
   if Dest.Align in [alTop, alBottom] then

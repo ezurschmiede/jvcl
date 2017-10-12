@@ -26,7 +26,7 @@ description : dialog components
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvProgressComponent.pas,v 1.5 2016-05-19 13:04:13 elias Exp $
+// $Id: JvProgressComponent.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvProgressComponent;
 
@@ -92,8 +92,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:13 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -262,7 +262,7 @@ begin
 //      (Owner as TJvProgressComponent).FOnShow(Self);
     except
       on E: Exception do
-        (Owner as TJvProgressComponent).FException := AcquireExceptionObject;
+        (Owner as TJvProgressComponent).FException := AcquireExceptionObject{$IFDEF RTL320_UP} as Exception{$ENDIF RTL320_UP};
     end;
   finally
     ModalResult := mrOk;

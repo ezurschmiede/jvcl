@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvHidControllerClass.pas,v 1.5 2016-05-19 13:04:09 elias Exp $
+// $Id: JvHidControllerClass.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvHidControllerClass;
 
@@ -490,8 +490,8 @@ function HidErrorString(const RetVal: NTSTATUS): string;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:09 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -779,7 +779,6 @@ begin
   inherited Create;
 
   // initialize private data
-  FPnPInfo := APnPInfo;
   FMyController := Controller;
   FIsPluggedIn := True;
   FIsCheckedOut := False;
@@ -808,12 +807,12 @@ begin
   OnData := Controller.OnDeviceData;
   OnUnplug := Controller.OnDeviceUnplug;
 
-  FHidFileHandle := CreateFile(PChar(PnPInfo.DevicePath), GENERIC_READ or GENERIC_WRITE,
+  FHidFileHandle := CreateFile(PChar(APnPInfo.DevicePath), GENERIC_READ or GENERIC_WRITE,
     FILE_SHARE_READ or FILE_SHARE_WRITE, nil, OPEN_EXISTING, 0, 0);
   FHasReadWriteAccess := HidFileHandle <> INVALID_HANDLE_VALUE;
   // Win2000 hack
   if not HasReadWriteAccess then
-    FHidFileHandle := CreateFile(PChar(PnPInfo.DevicePath), 0,
+    FHidFileHandle := CreateFile(PChar(APnPInfo.DevicePath), 0,
       FILE_SHARE_READ or FILE_SHARE_WRITE, nil, OPEN_EXISTING, 0, 0);
   if HidFileHandle <> INVALID_HANDLE_VALUE then
   begin
@@ -823,6 +822,7 @@ begin
   end
   else
     raise EControllerError.CreateRes(@RsEDeviceCannotBeOpened);
+  FPnPInfo := APnPInfo;
   // the file is closed to stop using up resources
   CloseFile;
 end;
@@ -1849,10 +1849,16 @@ var
                       Handled := False;
                       OnDeviceCreateError(Self, PnPInfo, Handled, RetryCreate);
                       if not Handled then
+                      Begin
+                        FreeAndNil(PnPInfo);
                         raise;
+                      end;
                     end
                     else
+                    Begin
+                      FreeAndNil(PnPInfo);
                       raise;
+                    end;
                 end;
               until not RetryCreate;
               

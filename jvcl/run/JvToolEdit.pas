@@ -27,7 +27,7 @@ located at http://jvcl.delphi-jedi.org
 Known Issues:
   (rb) Move button related functionality from TJvCustomComboEdit to TJvEditButton
 -----------------------------------------------------------------------------}
-// $Id: JvToolEdit.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvToolEdit.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvToolEdit;
 
@@ -1141,8 +1141,8 @@ function IsInWordArray(Value: Word; const A: array of Word): Boolean;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -1169,7 +1169,7 @@ uses
 type
   TCustomMaskEditAccessPrivate = class(TCustomEdit)
   protected
-    {$IFDEF RTL320_UP}
+    {$IFDEF RTL330_UP}
       {$MESSAGE WARN 'Check if Vcl.Mask.TCustomMaskEdit still has the exact same fields and adjust the IFDEF'}
     {$ENDIF}
     // Do not remove these fields, although they are not used.

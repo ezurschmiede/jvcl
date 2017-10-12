@@ -34,7 +34,7 @@ History:
     * Rewritten almost everything.
 
 -----------------------------------------------------------------------------}
-// $Id: JvThreadTimer.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvThreadTimer.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvThreadTimer;
 
@@ -98,8 +98,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:18 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -107,8 +107,7 @@ const
 implementation
 
 uses
-  Messages,
-  JvJCLUtils;
+  Messages;
 
 type
   TJvTimerThread = class(TJvCustomThread)

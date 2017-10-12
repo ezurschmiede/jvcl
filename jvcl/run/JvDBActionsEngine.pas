@@ -21,7 +21,7 @@ located at http://jvcl.delphi-jedi.org
 
 Known Issues:
 -----------------------------------------------------------------------------}
-// $Id: JvDBActionsEngine.pas,v 1.5 2016-05-19 13:04:06 elias Exp $
+// $Id: JvDBActionsEngine.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvDBActionsEngine;
 
@@ -183,8 +183,8 @@ function RegisteredDatabaseActionEngineList: TJvDatabaseActionEngineList;
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:06 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
     );
 {$ENDIF UNITVERSIONING}
@@ -503,7 +503,7 @@ begin
   if (ASelectedRow >= 0) and (ASelectedRow < SelectedRowsCount(aActionComponent)) and
     Assigned(ds) and ds.Active then
   begin
-    ds.GotoBookmark(Pointer(TAccessCustomDBGrid(CustomDBGrid(aActionComponent)).SelectedRows[ASelectedRow]));
+    ds.GotoBookmark({$IFNDEF RTL200_UP}Pointer{$ENDIF ~RTL200_UP}(TAccessCustomDBGrid(CustomDBGrid(aActionComponent)).SelectedRows[ASelectedRow]));
     Result := True;
   end
   else

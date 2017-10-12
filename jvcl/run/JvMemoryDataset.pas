@@ -64,7 +64,7 @@ Revisions : 1st = 2004/09/19
             7th = 2007/03/25
             8th = 2007/06/20
 -----------------------------------------------------------------------------}
-// $Id: JvMemoryDataset.pas,v 1.6 2016-09-16 15:57:18 elias Exp $
+// $Id: JvMemoryDataset.pas,v 1.7 2017-10-12 10:01:18 elias Exp $
 
 unit JvMemoryDataset;
 
@@ -377,8 +377,8 @@ type
 const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile: '$URL$';
-    Revision: '$Revision: 1.6 $';
-    Date: '$Date: 2016-09-16 15:57:18 $';
+    Revision: '$Revision: 1.7 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -1603,8 +1603,9 @@ begin
       SetAutoIncFields(PJvMemBuffer(ActiveBuffer));
     if FRecordPos >= FRecords.Count then
     begin
-      SetMemoryRecordData(PJvMemBuffer(ActiveBuffer), AddRecord.Index);
+      AddRecord;
       FRecordPos := FRecords.Count - 1;
+      SetMemoryRecordData(PJvMemBuffer(ActiveBuffer), FRecordPos);
     end
     else
     begin

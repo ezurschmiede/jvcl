@@ -27,7 +27,7 @@ negative number format, negative currency format and positive currency format.
 This could be rectified by a custom-written formatting routine.
 
 -----------------------------------------------------------------------------}
-// $Id: JvValidateEdit.pas,v 1.5 2016-05-19 13:04:18 elias Exp $
+// $Id: JvValidateEdit.pas,v 1.6 2017-10-12 10:01:18 elias Exp $
 
 unit JvValidateEdit;
 
@@ -352,8 +352,8 @@ const
   UnitVersioning: TUnitVersionInfo = (
     RCSfile:
       '$URL$';
-    Revision: '$Revision: 1.5 $';
-    Date: '$Date: 2016-05-19 13:04:18 $';
+    Revision: '$Revision: 1.6 $';
+    Date: '$Date: 2017-10-12 10:01:18 $';
     LogPath: 'JVCL\run'
   );
 {$ENDIF UNITVERSIONING}
@@ -684,6 +684,7 @@ begin
   else
     Result := StrToInt64Def(FEditText, 0);
   end;
+  Result := IntRangeValue(Result);
 end;
 
 procedure TJvCustomValidateEdit.SetAsInteger(NewValue: Int64);
@@ -715,6 +716,7 @@ begin
   else
     Result := StrToCurrDef(FEditText, 0);
   end;
+  Result := CurrRangeValue(Result);
 end;
 
 procedure TJvCustomValidateEdit.SetAsCurrency(NewValue: Currency);
@@ -760,6 +762,7 @@ begin
   else
     Result := JvSafeStrToFloatDef(FEditText, 0);
   end;
+  Result := FloatRangeValue(Result);
 end;
 
 procedure TJvCustomValidateEdit.SetAsFloat(NewValue: Double);
@@ -803,14 +806,14 @@ begin
         // would not catch the negative part, hence the need to use a function
         // that knows how to do the conversion.
         VarCyFromStr({$IFDEF RTL240_UP}PChar{$ENDIF RTL240_UP}(FEditText), LOCALE_USER_DEFAULT, 0, Cur);
-        Result := Cur;
+        Result := CurrRangeValue(Cur);
       end;
     dfFloat, dfFloatGeneral, dfDecimal, dfPercent, dfScientific, dfFloatFixed:
-      Result := JvSafeStrToFloatDef(FEditText, 0);
+      Result := FloatRangeValue(JvSafeStrToFloatDef(FEditText, 0));
     dfInteger, dfYear:
-      Result := StrToIntDef(FEditText, 0);
+      Result := IntRangeValue(StrToIntDef(FEditText, 0));
     dfHex:
-      Result := StrToIntDef('$' + FEditText, 0);
+      Result := IntRangeValue(StrToIntDef('$' + FEditText, 0));
     else
     begin
       DisplayedText := inherited Text;
